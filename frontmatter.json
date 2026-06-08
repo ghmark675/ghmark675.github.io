@@ -1,6 +1,7 @@
 {
   "$schema": "https://frontmatter.codes/frontmatter.schema.json",
   "frontMatter.global.timezone": "Asia/Shanghai",
+  "frontMatter.taxonomy.dateFormat": "yyyy-MM-dd HH:mm:ss +0800",
   "frontMatter.templates.enabled": true,
   "frontMatter.templates.folder": ".frontmatter/templates",
   "frontMatter.templates.prefix": "{{date|yyyy-MM-dd}}",
@@ -25,7 +26,8 @@
           "name": "date",
           "type": "datetime",
           "default": "{{now}}",
-          "isPublishDate": true
+          "isPublishDate": true,
+          "dateFormat": "yyyy-MM-dd HH:mm:ss +0800"
         },
         {
           "title": "Content preview",
@@ -46,6 +48,24 @@
           "title": "Categories",
           "name": "categories",
           "type": "categories"
+        },
+        {
+          "title": "Author",
+          "name": "author",
+          "type": "string",
+          "default": "ghmark675"
+        },
+        {
+          "title": "Math",
+          "name": "math",
+          "type": "boolean",
+          "default": false
+        },
+        {
+          "title": "Mermaid",
+          "name": "mermaid",
+          "type": "boolean",
+          "default": false
         }
       ]
     }
