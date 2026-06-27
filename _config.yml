@@ -149,6 +149,10 @@ paginate: 10
 # The base URL of your site
 baseurl: ""
 
+# Plugins › https://jekyllrb.com/docs/plugins/
+plugins:
+  - jekyll-gfm-admonitions # GitHub-flavored admonitions (GFM alerts: > [!NOTE], > [!TIP], ...)
+
 # ------------ The following options are not recommended to be modified ------------------
 
 kramdown:
@@ -200,7 +204,7 @@ compress_html:
   profile: false
   blanklines: false
   ignore:
-    envs: [development]
+   envs: [development]
 
 exclude:
   - "*.gem"

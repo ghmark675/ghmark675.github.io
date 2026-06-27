@@ -4,6 +4,11 @@ source "https://rubygems.org"
 
 gem "jekyll-theme-chirpy", "~> 7.5"
 
+group :jekyll_plugins do
+  # GitHub-flavored admonitions (GFM alerts: > [!NOTE], > [!TIP], ...)
+  gem "jekyll-gfm-admonitions"
+end
+
 gem "html-proofer", "~> 5.0", group: :test
 
 platforms :windows, :jruby do
